@@ -1,0 +1,8 @@
+.login {
+    width:40%;
+   background: linear-gradient(245deg,black,darkblue);
+    color:white;
+    font-weight: bold;
+    padding:20px;
+    box-shadow: 0 0 20px black;
+}

@@ -1,24 +1,43 @@
-import logo from './logo.svg';
+/* eslint-disable no-unused-vars */
+import React from 'react';
+
 import './App.css';
+// import Form from './Components/Form'
+import Home from './Components/Home/index'
+import ContactUs from './Components/ContactUs/index'
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom'
+import Navbar from './Components/Navbar/index'
+
+// import Register from './Components/Registration/index'
+import Login from './Components/Login/index';
+import Test from './Components/TestingComp/index'
+import About from './Components/Aboutus/index'
+import Mainservice from './Components/MainServiceComp/index'
+
+
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+
+
+<Router>
+  {/* <Navbar /> */}
+  <Switch>
+    
+   <Route  path="/login" component={Mainservice} />
+   <Route  path="/logout" component={Login} />
+    <Route exact path="/contact" component={ContactUs} />
+    <Route exact path="/register" component={Test} />
+    {/* <Route exact path="/register" component={Register} /> */}
+    <Route exact path="/about" component={About} />
+    <Route exact path="/" component={Home} />
+  </Switch>
+</Router>
     </div>
+
   );
 }
 
