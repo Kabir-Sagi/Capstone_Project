@@ -7,7 +7,7 @@ import BeautyS2 from '../images/Beauty services/pexels-delbeautybox-853427.jpg'
 import ElectricalC from '../images/Beauty services/pexels-anderson-guerra-1115128.jpg'
 
 import PlumberC1 from '../images/Carpenter services/pexels-pixabay-209235.jpg';
-import PaintingC1 from '../images/Study Services/pexels-thisisengineering-3862130.jpg';
+import PaintingC1 from '../images/Study Services/Tutorialservice2.jpg';
 
 
 
